@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    font-family: "Open Sans", sans-serif;
+}
+
+.calc{
+    border: 2px solid gainsboro;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen{
+ 
+    border: 2px solid gainsboro;
+    grid-column: 1 / span 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 32px;
+    height: 90px;
+    width: 480px;
+    font-weight: lighter;
+    overflow: auto;
+}
+#cont{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1.5fr repeat(5,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    
+}
+.item{
+    border: 1px solid gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: lighter;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+#equalsto{
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 4;
+}
+.screen:hover{
+    border: 3px groove gainsboro;
+}
+.op:hover{
+    border: 3px groove gainsboro;
+}
+.num:hover{
+    border: 3px groove gainsboro;
+}
+.dot:hover{
+    border: 3px groove gainsboro;
+}
+#clear:hover{
+    border: 3px groove gainsboro;
+}
+#equalsto:hover{
+    opacity: 100%;
+}
+#equalsto{
+    background-color: #1e90ff;
+    color: white;
+    opacity: 80%;
+}
+.op{ 
+    background-color: #d3d3d3;
+}
+h1{
+    text-align: center;
+    color: gray;
+    font-size: 40px;
+}
